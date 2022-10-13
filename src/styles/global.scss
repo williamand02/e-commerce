@@ -1,0 +1,81 @@
+:root {
+  --color--black: #000000;
+  --color--cyan-bluish-gray: #abb8c3;
+  --color--white: #ffffff;
+  --color--pale-pink: #f78da7;
+  --color--vivid-red: #c64f49;
+  --color--luminous-vivid-orange: #ff6900;
+  --color--luminous-vivid-amber: #fcb900;
+  --color--light-green-cyan: #7bdcb5;
+  --color--vivid-green-cyan: #00d084;
+  --color--pale-cyan-blue: #8ed1fc;
+  --color--vivid-cyan-blue: #0693e3;
+  --color--vivid-purple: #9b51e0;
+  --color--accent: #cc3028;
+  --color--primary: #000000;
+  --color--secondary: #636363;
+  --color--subtle-background: #cccccc;
+  --color--background: #eeeeee;
+  --gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+    135deg,
+    rgba(6, 147, 227, 1) 0%,
+    rgb(155, 81, 224) 100%
+  );
+
+  --font-size--small: 18px;
+  --font-size--medium: 20px;
+  --font-size--large: 26.25px;
+  --font-size--x-large: 42px;
+  --font-size--normal: 21px;
+  --font-size--larger: 32px;
+}
+
+body {
+  background-color: var(--color--background);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+button,
+input,
+div {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color--accent);
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color--accent);
+    border-radius: 20px;
+  }
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  /* stroke-width: 0; */
+  stroke: currentColor;
+  /* fill: currentColor; */
+}

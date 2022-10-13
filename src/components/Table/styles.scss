@@ -1,0 +1,36 @@
+.Table {
+  border-collapse: collapse;
+  background-color: var(--color--vivid-cyan-blue);
+  border-radius: 10px;
+  width: inherit;
+  height: fit-content;
+  thead {
+    tr {
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: var(--color--white);
+      th {
+        text-align: left;
+        padding: 0px 5px;
+      }
+    }
+  }
+  tbody {
+    background-color: var(--color--white);
+    tr {
+      &:nth-child(even) {
+        background-color: var(--color--pale-cyan-blue);
+      }
+    }
+    tr {
+      td {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+.Table__links {
+  display: flex;
+}

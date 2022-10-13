@@ -1,0 +1,32 @@
+.linkButton {
+  padding: 3px;
+  margin: 5px;
+  width: 2em;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  font-size: 2em;
+  width: 1.2em;
+  height: 1.2em;
+  &:hover {
+    background-color: var(--color--background);
+  }
+  .blue {
+    color: var(--color--vivid-cyan-blue);
+    &:hover {
+      color: var(--color--pale-cyan-blue);
+    }
+  }
+  .green {
+    color: var(--color--vivid-green-cyan);
+    &:hover {
+      color: var(--color--light-green-cyan);
+    }
+  }
+  .red {
+    color: var(--color--accent);
+    &:hover {
+      color: #d55f59;
+    }
+  }
+}
