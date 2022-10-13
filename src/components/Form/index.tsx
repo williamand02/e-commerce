@@ -96,23 +96,33 @@ const Form = (props: FormProps) => {
         />
       </div>
       <div className="btn-group">
-        <Button
-          color="green"
-          onClick={() =>
-            props.handleSubmit?.({
-              title,
-              description,
-              price,
-              discountPercentage,
-              rating,
-              stock,
-              brand,
-              category,
-            })
-          }
-        >
-          {product?.id ? "Cancelar" : "Salvar"}
-        </Button>
+        {product?.id ? (
+          <Button
+            color="green"
+            type="button"
+            onClick={() => props.handleSubmit?.()}
+          >
+            Cancelar
+          </Button>
+        ) : (
+          <Button
+            color="blue"
+            onClick={() =>
+              props.handleSubmit?.({
+                title,
+                description,
+                price,
+                discountPercentage,
+                rating,
+                stock,
+                brand,
+                category,
+              })
+            }
+          >
+            Salvar
+          </Button>
+        )}
       </div>
     </form>
   );

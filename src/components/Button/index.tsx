@@ -6,6 +6,7 @@ interface ButtonProps {
   className?: string;
   onClick?: any;
   round?: boolean;
+  type?: "button" | "reset" | "submit";
 }
 
 const Button = (props: ButtonProps) => {
@@ -17,6 +18,7 @@ const Button = (props: ButtonProps) => {
     ${props.className}
     ${props.round ? "round" : "square"}
     `}
+      type={props.type ? props.type : "submit"}
     >
       {props.children}
     </button>
